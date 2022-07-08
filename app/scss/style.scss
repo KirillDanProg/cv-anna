@@ -9,7 +9,43 @@ body {
   font-family: "Raleway", sans-serif;
   font-style: italic;
 
+  .header {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.423);
+    z-index: 2;
+
+    .logo {
+      padding-top: 8px;
+      text-align: center;
+      font-size: 25px;
+      font-style: italic;
+      span {
+        text-transform: uppercase;
+      }
+    }
+
+    .nav {
+      .list {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        .list-item {
+          a {
+            text-decoration: none;
+            color: initial;
+          }
+        }
+      }
+    }
+  }
   .container {
+    width: 1000px;
+    margin: 0 auto;
     h2 {
       text-align: center;
     }
@@ -18,38 +54,38 @@ body {
         visibility: hidden;
         padding-bottom: 15px;
       }
-      .header {
-        position: fixed;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        background-color: rgba(255, 255, 255, 0.423);
-        z-index: 2;
-        .logo {
-          padding-top: 8px;
-          text-align: center;
-          font-size: 25px;
-          font-style: italic;
-          span {
-            text-transform: uppercase;
-          }
-        }
-        .nav {
-          padding: 15px 0;
-          .list {
-            display: flex;
-            justify-content: space-evenly;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            .list-item {
-              a {
-                text-decoration: none;
-                color: initial;
-              }
-            }
-          }
-        }
+      // .header {
+      //   position: fixed;
+      //   width: 100%;
+      //   margin: 0;
+      //   padding: 0;
+      //   background-color: rgba(255, 255, 255, 0.423);
+      //   z-index: 2;
+      //   .logo {
+      //     padding-top: 8px;
+      //     text-align: center;
+      //     font-size: 25px;
+      //     font-style: italic;
+      //     span {
+      //       text-transform: uppercase;
+      //     }
+      //   }
+        // .nav {
+        //   padding: 15px 0;
+        //   .list {
+        //     display: flex;
+        //     justify-content: space-evenly;
+        //     list-style: none;
+        //     margin: 0;
+        //     padding: 0;
+        //     .list-item {
+        //       a {
+        //         text-decoration: none;
+        //         color: initial;
+        //       }
+        //     }
+        //   }
+        // }
       }
 
       .main {
@@ -115,8 +151,8 @@ body {
           gap: 20px;
           margin-bottom: 20px;
           a {
-              display: inline-block;
-              width: 10%;
+            display: inline-block;
+            width: 10%;
           }
         }
         i {
@@ -132,4 +168,6 @@ body {
       }
     }
   }
-}
+
+
+  @import "mobile"
